@@ -1,0 +1,606 @@
+/* universal styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+@font-face {
+  font-family: 'Futura-Condensed';
+  src: url('../Fonts/Futura\ Extra\ Black\ Condensed\ Regular.otf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'Trade-Gothic';
+  src: url('../Fonts/TradeGothicforNike365BdCn.ttf') format('TrueType')
+}
+
+@import url(//db.onlinewebfonts.com/c/56e51b15f9bcb363331159989c474c45?family=TradeGothicforNike365-BdCn);
+
+@font-face {
+  font-family: "Trade-GothicX";
+  src: url("//db.onlinewebfonts.com/t/56e51b15f9bcb363331159989c474c45.eot");
+  src: url("//db.onlinewebfonts.com/t/56e51b15f9bcb363331159989c474c45.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/56e51b15f9bcb363331159989c474c45.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/56e51b15f9bcb363331159989c474c45.woff") format("woff"), url("//db.onlinewebfonts.com/t/56e51b15f9bcb363331159989c474c45.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/56e51b15f9bcb363331159989c474c45.svg#TradeGothicforNike365-BdCn") format("svg");
+}
+
+.HV {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+}
+
+.TG {
+  font-family: trade-gothic, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1500px) {
+
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-contents {
+  max-width: 1500px;
+}
+
+.link {
+  text-decoration: none;
+  color: #757575;
+}
+
+.white {
+    color: white;
+}
+
+/* nav bar */
+nav {
+  width: 100%;
+  height: 40px;
+  border-bottom: solid 1px #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  padding: 8px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left svg {
+  padding: 0px 4px 0px 0px;
+}
+
+.nav-right {
+  padding: 8px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 12px;
+}
+
+/* SNKRS logo row */
+.logo-row {
+  width: 100%;
+  height: 57px;
+  border-bottom: solid 1px #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main section */
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title h1 {
+  font-family: Futura-Condensed;
+  color: #111111;
+  font-size: 155px;
+  text-align: center;
+  padding: 16px 40px;
+}
+
+.main-title img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  padding: 0px 40px;
+}
+
+.btn-shell {
+  padding: 40px;
+}
+
+.raffle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E5E5E5;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.raffle-btn a {
+  display: block;
+  line-height: 0;
+  text-decoration: none;
+  color: #757575;
+  padding: 40px;
+}
+
+/* info section */
+.info-section {
+  background-image: url("https://vannakjkum.com/wp-content/uploads/2021/09/b9ac9cb13ed13cbb8142648b2dd19521.png");
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info-body {
+  padding: 40px;
+}
+
+.info-txt {
+  background-color: #111111;
+  padding: 40px;
+}
+
+.info-txt h2 {
+  line-height: 1.5;
+  font-size: 48px;
+  padding: 0px 40px;
+  text-align: center;
+  margin-top: -24px;
+}
+
+.info-txt p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 12px;
+}
+
+.info-section-2 {
+  display: none;
+}
+
+/* photo slider */
+.PSE {
+  width: 100%;
+  padding: 40px 0px;
+  /* background: #f5f5f5; */
+}
+
+.photo-slider {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.slider {
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  max-height: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  max-height: 1000px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  max-height: 1000px;
+}
+
+/* manual slide navigation */
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  max-width: 1500px;
+  margin-top: -40px;
+  margin-left: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #757575;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #757575;
+}
+
+#radio-1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio-2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio-3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio-4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #111111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-flex {
+  width: 100%;
+  max-width: 1500px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+  max-width: 775px;
+}
+
+.column-1,
+.column-2 {
+  width: 100%;
+  max-width: 242px;
+  padding: 0px 8px;
+  display: flex;
+  flex-direction: column;
+  /* line-height: 2.22; */
+  line-height: 1.95;
+}
+
+.column-1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.column-2 .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-2 a {
+  text-decoration: none;
+}
+
+.column-2 .TG {
+  color: #fff;
+}
+
+.column-2 .HV {
+  color: #7e7e7e;
+}
+
+.column-2 .HV:hover {
+  color: #fff;
+  transition: 0.25s;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon-links a {
+  padding: 0px 8px;
+  text-decoration: none;
+  color: #7e7e7e;
+}
+
+.icon-links svg:hover {
+  fill: #fff;
+  transition: 0.25s;
+}
+
+.footer-nav {
+  display: block;
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #7e7e7e;
+  border-bottom: none;
+}
+
+.bottom-line {
+  width: 100%;
+}
+
+.footer-nav {
+  max-width: 1420px;
+  padding: 0px 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0px 40px;
+}
+
+.footer-nav span {
+  font-size: 10px;
+  color: #7e7e7e;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 2.2;
+  padding: 8px 0px;
+}
+
+.footer-nav .links {
+  padding: 8px 0px;
+}
+
+.footer-link {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-decoration: none;
+  color: #7e7e7e;
+  font-size: 10px;
+  padding: 0px 8px;
+}
+
+.footer-link:hover {
+  color: #fff;
+  transition: 0.25s;
+}
+
+@media only screen and (max-width: 950px) {
+.info-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .info-txt h2 {
+    max-width: 475px;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  /* main section */
+  .main-title h1 {
+    padding: 16px 40px;
+  }
+  
+  .main-title img {
+    padding: 0px 20px;
+  }
+  
+  .btn-shell {
+    padding: 20px;
+  }
+
+  .raffle-btn a {
+    padding: 0px 20px;
+  }
+
+  /* info section */
+  .info-body {
+    padding: 20px;
+  }
+
+  .info-txt {
+    background-color: #111111;
+    padding: 20px;
+  }
+
+  .info-txt h2 {
+    margin: 0 !important;
+    width: 90%;
+    padding: 0px 20px;
+  }
+
+  /* photo slider */
+  .PSE {
+    padding: 20px 0px;
+    /* background: #f5f5f5; */
+  }
+
+  .photo-slider {
+    padding: 0px 20px;
+  }
+
+  .navigation-manual {
+    margin-top: -30px;
+    margin-left: -20px;
+  }
+  
+  .manual-btn:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  /* footer */
+  .footer-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 8px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 705px;
+  }
+
+  .column-1 {
+    width: 100%;
+    max-width: 705px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #7e7e7e;
+  }
+
+  .column-2 {
+    max-width: 705px;
+    width: 100%;
+    padding: 0px !important;
+  }
+
+  .accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 705px;
+    width: 100%;
+  }
+
+  .accordion .contentBx {
+    position: relative;
+    max-width: 705px;
+    width: 100%;
+  }
+
+  .accordion .contentBx .label {
+    position: relative;
+    padding: 8px;
+    background: #111111;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    /* font-size: 1.5em; */
+  }
+
+  .accordion .contentBx.active .label::before{
+    content: '-';
+  }
+
+  .accordion .contentBx .content {
+    position: relative;
+    background: #111111;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: hidden;
+  }
+
+  .accordion .contentBx.active .content {
+    height: 206px;
+    padding: 10px;
+    overflow-y: hidden;
+  }
+
+  .accordion .contentBx.active #c2 {
+    height: 176px;
+    padding: 10px;
+    overflow-y: hidden;
+  }
+
+  .icon-links {
+    padding: 8px 0px !important;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    align-items: flex-start !important;
+    height: auto !important;
+    flex-direction: column;
+    padding: 0px !important;
+    margin: 0px 20px;
+  }
+
+  .footer-nav .footer-txt {
+    padding: 4px 8px 0px 8px !important;
+  }
+
+  .footer-nav span {
+    padding: 0px !important;
+  }
+  
+  .footer-nav .footer-link {
+    padding: 0px 8px !important;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .info-txt h2 {
+    font-size: 36px !important;
+    max-width: 375px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-title h1 {
+    font-size: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .info-txt h2 {
+    font-size: 24px !important;
+    max-width: 220px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .main-title h1 {
+    font-size: 75px !important;
+  }
+
+  .info-txt h2 {
+    padding: 0px !important;
+  }
+}
